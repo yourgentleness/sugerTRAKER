@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Semantik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            background-color: #f1f1f1;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        footer {
+            font-size: 14px;
+        }
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+        figcaption {
+            font-style: italic;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Website Semantik</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Artikel Utama</h2>
+            <p>Ini adalah artikel utama yang membahas tentang pentingnya penggunaan HTML5 dalam pengembangan web.</p>
+            <figure>
+                <img src="https://via.placeholder.com/600x300" alt="Gambar Ilustrasi HTML5">
+                <figcaption>Gambar ilustrasi tentang HTML5</figcaption>
+            </figure>
+        </article>
+
+        <section>
+            <h3>Bagian Tentang Kami</h3>
+            <p>Website ini dibuat untuk memberikan contoh penggunaan elemen semantik HTML5 dengan cara yang mudah dimengerti.</p>
+            <aside>
+                <h4>Sidebar Informasi</h4>
+                <p>Informasi lebih lanjut mengenai HTML5 dapat ditemukan di berbagai tutorial online.</p>
+            </aside>
+        </section>
+
+        <section>
+            <h3>Detail dan Ringkasan</h3>
+            <details>
+                <summary>Ketahui lebih lanjut tentang HTML5</summary>
+                <p>HTML5 adalah versi terbaru dari HTML yang membawa banyak fitur baru seperti elemen semantik dan dukungan multimedia yang lebih baik.</p>
+            </details>
+        </section>
+
+        <section>
+            <h3>Penggunaan Tanggal dan Waktu</h3>
+            <p>Event ini akan diadakan pada <time datetime="2025-02-01">1 Februari 2025</time> di kota besar.</p>
+        </section>
+
+        <aside>
+            <h4>Informasi Terkait</h4>
+            <p>Untuk informasi lebih lanjut mengenai tutorial HTML5, silakan lihat link berikut: <a href="#">HTML5 Tutorials</a></p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Website Semantik. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+</html>

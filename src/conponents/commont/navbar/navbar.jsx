@@ -8,28 +8,35 @@ import './navbar.css'
 
 const Navbar = () => {
     return (
-         <nav className='fixed bottom-0 inset-x-0 border-b-2 bg-white'>
-            <ul className='h-16 text-sm text-gray-500 focus:text-main-color border-solid flex flex-row justify-around items-center'>
+         <nav className='navbar fixed bottom-0 inset-x-0 border-b-2 bg-white'>
+            <p className='logo hidden text-main-color'>Sugar<span className='font-bold'>Tracker</span></p>
+            <ul className='h-16 text-sm flex flex-row justify-around items-center text-gray-500 focus:text-main-color'>
                 <li className=''>
                     <a href="">
-                        <HomeIcon className=''/>
+                        <span>
+                            <HomeIcon className=''/>
+                        </span>
                         Home
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <ScheduleSharpIcon/> 
+                        <span>
+                            <ScheduleSharpIcon/> 
+                        </span>
                         History
                     </a>  
                 </li>
-                <li>
-                    <a href="" className='relative bottom-4 text-main-color'>
+                <li className='plus relative bottom-4  text-main-color'>
+                    <a href="">
                         <AddCircleIcon style={{ fontSize:'60' }}/>
                     </a>  
                 </li>
-                <li className='flex items-center justify-center '>
+                <li>
                     <a href="">
-                        <SearchSharpIcon/> 
+                        <span>
+                            <SearchSharpIcon/> 
+                        </span>
                         Search
                     </a>  
                     {/* <label for='input' className='w-8 h-7 cursor-pointer flex items-center justify-center rounded-l-lg bg-slate-100 text-black'>
@@ -44,7 +51,9 @@ const Navbar = () => {
                 </li>
                 <li>
                     <a href="">
-                        <AccountCircleSharpIcon/>
+                        <span>
+                            <AccountCircleSharpIcon/>
+                        </span>
                         Profile
                     </a>
                 </li>

@@ -1,8 +1,41 @@
 
-
-ul li a {
+ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+
+@media (min-width: 768px) {
+    .navbar {
+      top: 0;
+      bottom: auto;
+    }
+    
+    .navbar ul {
+        justify-content: center;
+        gap: 4rem;
+    }
+    
+    .navbar ul li a {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .plus {
+        font-size: 13rem;
+        position: absolute;
+        top: 5%;
+        right: 3.5rem;
+    }
+
+    .logo {
+        /* absolute top-4 left-14 text-2xl font-medium text-main-color */
+        display: inline;
+        position: absolute;
+        top: 20%;
+        left: 3.5rem;
+        font-size: 1.5rem;
+    }
+  }

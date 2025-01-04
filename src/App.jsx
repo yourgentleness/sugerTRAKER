@@ -5,7 +5,7 @@ import FunEx from './conponents/section/funEx';
 function App() {
 
   return (
-    <div className='h-dvh p-4 bg-slate-100'>
+    <div className='h-dvh p-4 md:pt-32 bg-slate-100'>
       <Dasbord/>
     </div>
   )

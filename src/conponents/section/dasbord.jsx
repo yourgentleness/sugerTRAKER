@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from '../commont/navbar/navbar';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import Navbar from '../commont/navbar/navbar';
+import { Link } from 'react-router-dom';
 
 const Dasbord = () => {
     return (
-        <main className='dasbord flex flex-col pt-5 md:flex-row justify-evenly gap-10'>
-            <Navbar/>
                 <section className='flex flex-col gap-3 grow'> 
                     <h1 className='text-2xl font-semibold text-center '>Selamat Datang, User</h1>
                     <div className='grid grid-cols-6 gap-6 px-3 py-5 text-md font-semibold rounded-lg bg-main-color text-white'>
@@ -23,10 +22,6 @@ const Dasbord = () => {
                        </a>
                     </div>
                 </section>
-                <section className='flex grow items-center justify-center bg-slate-500'>
-                    <h1>Ongoing</h1>
-                </section>
-        </main>
     );
 }
 

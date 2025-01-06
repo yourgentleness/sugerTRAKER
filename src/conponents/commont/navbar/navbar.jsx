@@ -5,6 +5,7 @@ import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import './navbar.css'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -12,33 +13,33 @@ const Navbar = () => {
             <p className='logo hidden text-main-color'>Sugar<span className='font-bold'>Tracker</span></p>
             <ul className='h-16 text-sm flex flex-row justify-around items-center text-gray-500 focus:text-main-color'>
                 <li className=''>
-                    <a href="">
+                    <Link className='link-nav' to={'/'}>
                         <span>
                             <HomeIcon className=''/>
                         </span>
                         Home
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="">
+                    <Link className='link-nav' to={'History'}>
                         <span>
                             <ScheduleSharpIcon/> 
                         </span>
                         History
-                    </a>  
+                    </Link>  
                 </li>
                 <li className='plus relative bottom-4  text-main-color'>
-                    <a href="">
+                    <a className='link-nav'>
                         <AddCircleIcon style={{ fontSize:'60' }}/>
                     </a>  
                 </li>
                 <li>
-                    <a href="">
+                    <Link className='link-nav' to={'Search'}>
                         <span>
                             <SearchSharpIcon/> 
                         </span>
                         Search
-                    </a>  
+                    </Link>  
                     {/* <label for='input' className='w-8 h-7 cursor-pointer flex items-center justify-center rounded-l-lg bg-slate-100 text-black'>
                         <SearchSharpIcon fontSize='small'/>
                     </label> */}
@@ -50,12 +51,12 @@ const Navbar = () => {
                     /> */}
                 </li>
                 <li>
-                    <a href="">
+                    <Link className='link-nav' to={'Profile'}>
                         <span>
                             <AccountCircleSharpIcon/>
                         </span>
                         Profile
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </nav>
